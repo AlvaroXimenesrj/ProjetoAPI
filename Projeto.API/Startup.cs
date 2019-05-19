@@ -50,7 +50,8 @@ namespace Projeto.API
            /*abaixo - permito toda origem, todo método e toda
            leitura */
            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-            app.UseMvc();
+           app.UseStaticFiles();
+           app.UseMvc();
         }
     }
 }
